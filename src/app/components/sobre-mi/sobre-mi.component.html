@@ -1,0 +1,213 @@
+<app-general></app-general>
+
+<div id="SOBREMI">
+  <div class="container-fluid titsec">
+    <h2 class="titulo">Sobre Mi</h2>
+    <div class="row descripcion">
+      <div class="descripciontxt col-sm-8">
+        <p>
+          <span>
+            {{ miPortfolio.persona.descripcion }}
+          </span>
+        </p>
+      </div>
+      <div class="imgInicio col-sm-4">
+        <img [src]="miPortfolio.persona.foto" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <section class="sobremi">
+    <div class="row" id="dp">
+      <!-- datos personales -->
+      <div class="col-sm-6">
+        <h3>Datos Personales</h3>
+        <ul>
+          <li>
+            <strong>Cumpleaños: </strong>
+            <span [textContent]="miPortfolio.persona.nacimiento"></span>
+          </li>
+          <li>
+            <strong>Email: </strong
+            ><span [textContent]="miPortfolio.persona.email"></span>
+          </li>
+          <li>
+            <strong>Dirección: </strong>
+            <span [textContent]="miPortfolio.persona.direccion"></span>
+          </li>
+          <li>
+            <strong>Cargo Actual: </strong>
+            <span [textContent]="miPortfolio.persona.ocupacion"></span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- intereses -->
+      <div class="col-sm-6">
+        <h3>Intereses</h3>
+        <div class="contenedor-intereses">
+          <div class="interes">
+            <i class="fa-solid fa-headphones"></i>
+            <span>MUSICA</span>
+          </div>
+          <div class="interes">
+            <i class="fa-solid fa-plane"></i>
+            <span>VIAJAR</span>
+          </div>
+          <div class="interes">
+            <i class="fa-sharp fa-solid fa-tree"></i>
+            <span>NATURALEZA</span>
+          </div>
+
+          <div class="interes">
+            <i class="fa-sharp fa-solid fa-microchip"></i>
+            <span>ELECTRONICA</span>
+          </div>
+          <div class="interes">
+            <i class="fa-sharp fa-solid fa-terminal"></i>
+            <span>PROGRAMAR</span>
+          </div>
+          <div class="interes">
+            <i class="fa-sharp fa-solid fa-music"></i>
+            <span>AUDIO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a [href]="miPortfolio.persona.pathCv" download="CV_Martin.pdf">
+      <button class="sobreMiB">
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
+    </a>
+  </section>
+
+  <!-- SECCION SKILLS -->
+
+  <section class="skills" id="skills">
+    <div class="contenido-seccion">
+      <h2>Skills</h2>
+      <div class="row">
+        <!-- Technical Skill -->
+        <div class="col">
+          <h3>Technical Skills</h3>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill1.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill1.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill1.Cant }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill2.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill2.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill2.Cant }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill3.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill3.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill3.Cant }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill4.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill4.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill4.Cant }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill5.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill5.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill5.Cant }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Professional Skills -->
+        <div class="col">
+          <h3>Professional Skills</h3>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill6.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill6.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill6.Cant }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill7.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill7.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill7.Cant }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill8.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill8.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill8.Cant }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill9.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill9.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill9.Cant }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>{{ miPortfolio.skills.skill10.Name }}</span>
+            <div class="barra-skill">
+              <div
+                class="progreso"
+                style="width: {{ miPortfolio.skills.skill10.Cant }}"
+              >
+                <span>{{ miPortfolio.skills.skill10.Cant }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

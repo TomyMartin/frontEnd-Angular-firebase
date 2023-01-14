@@ -1,0 +1,147 @@
+<app-general></app-general>
+
+<!-- contenido de pagina -->
+<div id="CONTACTO">
+  <h2 class="titulo">CONTACTO</h2>
+
+  <div class="container-contacto">
+    <img class="Imag" [src]="miPortfolio.contactoImage" alt="Imagen de fondo" />
+
+    <h3 class="justificado">
+      Si estás interesado en contactarme no dudes en hacerlo.
+    </h3>
+    <form class="m-5">
+      <div class="formulario">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 class="text-center">Datos Personales</h2>
+            <div id="datosPers">
+              <p [textContent]="miPortfolio.persona.ciudad"></p>
+              <p [textContent]="miPortfolio.persona.pais"></p>
+              <p [textContent]="miPortfolio.persona.email"></p>
+              <p [textContent]="miPortfolio.persona.numeroCel"></p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h2 class="text-center">Envíame un mensaje</h2>
+            <form [formGroup]="form" (ngSubmit)="onBtEnviar($event)">
+              <div class="form-group row">
+                <label for="inputName" class="col-lg-2 col-form-label"
+                  >Nombre</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    formControlName="nombre"
+                    type="nombre"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Nombre"
+                    [ngClass]="{
+                      'is-invalid': Nombre?.errors && Nombre?.touched,
+                      'is-valid': !Nombre?.errors && Nombre?.touched
+                    }"
+                  />
+                  <div *ngIf="Nombre?.errors && Nombre?.touched">
+                    <p *ngIf="Nombre?.hasError('required')" class="text-danger">
+                      El nombre es requerido.
+                    </p>
+                    <p
+                      *ngIf="Nombre?.hasError('maxlength')"
+                      class="text-danger"
+                    >
+                      Máximo debe tener 30 caracteres.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail" class="col-lg-2 col-form-label"
+                  >Email</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="email"
+                    formControlName="email"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="Email"
+                    [ngClass]="{
+                      'is-invalid': Email?.errors && Email?.touched,
+                      'is-valid': !Email?.errors && Email?.touched
+                    }"
+                    class="form-control"
+                  />
+                  <div *ngIf="Email?.errors && Email?.touched">
+                    <p *ngIf="Email?.hasError('email')" class="text-danger">
+                      Formato de email inválido.
+                    </p>
+                    <p *ngIf="Email?.hasError('required')" class="text-danger">
+                      El email es requerido.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputMsj" class="col-lg-2 col-form-label"
+                  >Mensaje</label
+                >
+                <div class="col-sm-10">
+                  <textarea
+                    formControlName="mensaje"
+                    [ngClass]="{
+                      'is-invalid': Mensaje?.errors && Mensaje?.touched,
+                      'is-valid': !Mensaje?.errors && Mensaje?.touched
+                    }"
+                    type="mensaje"
+                    class="form-control"
+                    id="inputMsj"
+                    rows="5"
+                    placeholder="Mensaje"
+                  ></textarea>
+
+                  <div *ngIf="Mensaje?.errors && Mensaje?.touched">
+                    <p
+                      *ngIf="Mensaje?.hasError('required')"
+                      class="text-danger"
+                    >
+                      El mensaje es requerido.
+                    </p>
+                    <p
+                      *ngIf="Mensaje?.hasError('maxlength')"
+                      class="text-danger"
+                    >
+                      Máximo debe tener 200 caracteres.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-2"></div>
+                <div class="col-sm-10 contB">
+                  <button
+                    class="btn btn-primary msjButton"
+                    type="submit"
+                    (click)="mostrarMsj = !mostrarMsj"
+                    [disabled]="!form.valid"
+                  >
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                  </button>
+                  <div *ngIf="mostrarMsj">
+                    <label
+                      id="msjEnviado"
+                      for="msjButton"
+                      class="col-sm-10 col-form-label"
+                    >
+                      Mensaje Enviado <i class="fa-solid fa-check"></i
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

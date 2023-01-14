@@ -1,0 +1,88 @@
+/* CONTACTO */
+.titulo {
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: "Righteous";
+  font-size: 48px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.justificado {
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 50%;
+}
+
+#datosPers {
+  margin: 20px auto;
+}
+
+.container-contacto {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 20px 0;
+}
+.Imag {
+  height: 85%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+.formulario {
+  margin-left: 10%;
+  margin-right: 10%;
+  min-height: 54vh;
+}
+
+.msjButton {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  width: fit-content;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+.msjButton .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 1s;
+}
+.msjButton:hover .overlay {
+  width: 100%;
+}
+
+label {
+  min-width: 80px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+#CONTACTO {
+  position: relative;
+  padding-top: 8vh;
+  padding-bottom: 2vh;
+}
+#msjEnviado {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+}

@@ -1,0 +1,204 @@
+.sobremi {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+  display: block;
+}
+.titulo {
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: "Righteous";
+  font-size: 48px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.titsec h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.descripcion {
+  padding: 2%;
+  background-color: #5e5e5e;
+}
+
+.descripciontxt {
+  text-align: justify;
+  margin: auto;
+  width: 50%;
+  color: rgb(255, 255, 255);
+}
+
+.col-sm-4 {
+  position: relative;
+  min-width: 35vh;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgInicio img {
+  border: 5px solid #1cb698;
+  position: relative;
+  margin-left: 5vh;
+  width: 70%;
+  min-width: 20vh;
+  border-radius: 100%;
+}
+#secSM span {
+  color: #1cb698;
+  font-weight: bold;
+}
+
+#subtitPrincipal {
+  color: #ffffff;
+}
+
+.imgSM {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid rgb(231, 195, 77);
+}
+
+#dp .col-sm-6 h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#dp .col-sm-6 .contenedor-intereses {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 100px;
+  margin-right: 100px;
+}
+#dp .col-sm-6 .contenedor-intereses .interes {
+  width: 100px;
+  height: 100px;
+  background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+#dp .col-sm-6 .contenedor-intereses .interes span {
+  color: #ffffff;
+  font-size: 15px;
+}
+#dp .col-sm-6 .contenedor-intereses .interes:hover {
+  background-color: #1cb698;
+}
+#dp .col-sm-6 .contenedor-intereses .interes i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.sobreMiB {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  width: fit-content;
+  display: block;
+  margin: 60px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+.sobreMiB .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 1s;
+}
+.sobreMiB:hover .overlay {
+  width: 100%;
+}
+
+/* SECCION S K I L L S */
+.skills {
+  background-color: #5e5e5e;
+  color: #fff;
+  padding: 50px 20px;
+}
+.skills .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+.skills h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+.skills .row {
+  display: flex;
+}
+.skills .row .col {
+  width: 50%;
+  padding: 0 20px;
+  min-width: 400px;
+}
+.skills .row .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+.skills .row > span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.skills .row .barra-skill {
+  height: 8px;
+  width: 80%;
+  background-color: #131517;
+  border-radius: 40px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.progreso {
+  background: linear-gradient(to right, #06261f, #1cb698);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  transition: 0.1s;
+  border-radius: 40px;
+}
+
+.skills .row .barra-skill span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1cb698;
+  border-radius: 40px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+#SOBREMI {
+  position: relative;
+  padding-top: 8vh;
+}

@@ -1,0 +1,81 @@
+{
+  "persona": {
+    "nombre": "Tomás Martín",
+    "frase": "ingeniero, apasionado por la IT y aveces músico",
+    "descripcion": "Hola, soy Tomi Martin. En la actualidad me encuentro desarrollando un algoritmo de IA basado redes neuronales para detectar y clasificar registros acústicos de embarcaciones como tesis de grado de Ingeniería. En lo profesional, me encuentro trabajando como desarrollador RPA y consultor para KPMG. Además estoy terminando el curso de Full Stack Web Developer de Argentina Programa y me capacito en herramientas computacionales como Power Automate constantemente para crecer en mi trabajo. Me gusta mucho la musica, amo escucharla pero además he compuesto y grabado canciones.",
+    "ciudad": "Buenos Aires",
+    "pais": "Argentina",
+    "nacimiento": "20/03/1995",
+    "direccion": "Av. Urquiza 4561, Caseros, BA, Argentina",
+    "ocupacion": "Consultor | RPA Dev | Digital Enablement - KPMG",
+    "email": "tomasheto@hotmail.es",
+    "numeroCel": "+54-2634332316",
+    "pathLinkedin": "https://www.linkedin.com/in/tomas-martin-24662021a/",
+    "pathFacebook": "https://www.facebook.com/gregoriio.saez/",
+    "pathCv": "/assets/PDF/CV-Martin.pdf",
+    "foto": "/assets/Imagenes/FotoCV.jpg"
+  },
+
+  "pathPortada": "/assets/Imagenes/portada.png",
+  "contactoImage": "/assets/Imagenes/contact_bg.png",
+  "APLink": "https://argentinaprograma.inti.gob.ar/",
+  "APImage": "/assets/Imagenes/APLogo-20-20.png",
+
+  "itemsPortfolio": {
+    "item1": {
+      "nombre": "Machine Learning",
+      "descripcion": "Detección y clasificación automática de registros acústicos de embarcaciones.",
+      "path": "/assets/PDF/Martin Tomas_Avance 5_Detección y clasificación automática de registros acústicos de embarcaciones_.pdf",
+      "img": "/assets/Imagenes/IA.png"
+    },
+    "item2": {
+      "nombre": "Acústica Subacuática",
+      "descripcion": "Detector Semi-Automatico de Ballena Fin",
+      "path": "/assets/PDF/Informe Final de PPS - Martin Tomas.pdf",
+      "img": "/assets/Imagenes/DetectorCetaceos.png"
+    },
+    "item3": {
+      "nombre": "Acústica",
+      "descripcion": "Medición Acústica de Microestado UNTREF",
+      "path": "/assets/PDF/Acoustical Parameters_Bevilacqua_Martín_Martínez_1C2020.pdf",
+      "img": "/assets/Imagenes/MAcust.png"
+    },
+    "item4": {
+      "nombre": "Producción Audiovisual",
+      "descripcion": "Sesiones en la Mansión",
+      "path": "https://linktr.ee/Mansion.Sesiones",
+      "img": "/assets/Imagenes/Logo blanco.png"
+    },
+    "item5": {
+      "nombre": "Desarrollo en Python",
+      "descripcion": "Herramienta para el Procesamiento RIR's",
+      "path": "/assets/PDF/Desarrollo de un software de procesamiento re RIRs_Bevilacqua_Martín_Martínez_1C2020_V1.pdf",
+      "img": "/assets/Imagenes/RIR.png"
+    },
+    "item6": {
+      "nombre": "SIGNUM",
+      "descripcion": "Grabación, Mezcla y Mastering",
+      "path": "https://www.youtube.com/watch?v=bTmYCmcbnxM&ab_channel=D%C3%BAoMoyano-Burgos",
+      "img": "/assets/Imagenes/DuoMB.jpg"
+    },
+    "item7": {
+      "nombre": "Desarrollo en Matlab",
+      "descripcion": "Síntesis de Voz por LPC",
+      "path": "/assets/PDF/TP2-LPC-MARTIN.pdf",
+      "img": "/assets/Imagenes/3.jpg"
+    }
+  },
+
+  "skills": {
+    "skill1": { "Name": "Javascript", "Cant": "65%" },
+    "skill2": { "Name": "HTML & CSS", "Cant": "75%" },
+    "skill3": { "Name": "Logic Pro X", "Cant": "90%" },
+    "skill4": { "Name": "Python", "Cant": "80%" },
+    "skill5": { "Name": "Java", "Cant": "70%" },
+    "skill6": { "Name": "Resolución de Conflicos", "Cant": "90%" },
+    "skill7": { "Name": "Trabajo en Equipo", "Cant": "80%" },
+    "skill8": { "Name": "Creatividad", "Cant": "85%" },
+    "skill9": { "Name": "Dedicación", "Cant": "90%" },
+    "skill10": { "Name": "Empatía", "Cant": "85%" }
+  }
+}

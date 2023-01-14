@@ -1,0 +1,39 @@
+.titImag {
+  height: 85%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+#subtitPrincipal {
+  color: #ffffff;
+  font-size: 4vh;
+}
+
+.tituloPrincipal {
+  font-size: 10vh;
+  letter-spacing: 3px;
+  word-spacing: 6px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-variant: normal;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px #026670;
+  color: #fce181;
+}
+.centrado {
+  position: relative;
+  text-align: center;
+  top: 25vh;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+.image {
+  position: relative;
+  min-height: 85vh;
+  padding-top: 8vh;
+}

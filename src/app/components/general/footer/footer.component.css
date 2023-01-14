@@ -1,0 +1,39 @@
+#footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background-color: #fff;
+  padding: 1.7em 0;
+  text-align: center;
+  z-index: 1;
+  position: fixed;
+}
+.redes {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  align-self: bottom;
+}
+.redes a {
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-top: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.redes a:hover {
+  background-color: #1cb698;
+}
