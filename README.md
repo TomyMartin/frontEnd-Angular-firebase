@@ -1,5 +1,10 @@
 # PortfolioFEAngular
 
+Portfolio hosteado en FIREBASE: https://angular-portfolio-ef53e.web.app/
+User: portfolioTomasMartin@hotmail.com
+PWD: Prueba 123
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
 ## Development server
